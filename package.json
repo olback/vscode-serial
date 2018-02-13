@@ -1,0 +1,77 @@
+{
+    "name": "vscode-serial",
+    "displayName": "vscode-serial",
+    "description": "A VS Code Serial monitor",
+    "version": "0.0.1",
+    "publisher": "olback",
+    "icon": "serial-128.png",
+    "galleryBanner": {
+        "color": "#333",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/olback/vscode-serial",
+    "bugs": "https://github.com/olback/vscode-serial/issues",
+    "categories": [
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/olback/vscode-serial.git"
+    },
+    "author": {
+        "name": "olback",
+        "email": "vscode-serial@olback.net"
+    },
+    "keywords": [
+        "serial",
+        "arduino",
+        "monitor",
+        "serial-monitor",
+        "serialport"
+    ],
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "activationEvents": [
+        "onCommand:vscode-serial.openPort",
+        "onCommand:vscode-serial.closePort",
+        "onCommand:vscode-serial.sendCommand",
+        "onCommand:vscode-serial.setDeli"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-serial.openPort",
+                "title": "Serial: Open port"
+            },
+            {
+                "command": "vscode-serial.closePort",
+                "title": "Serial: Close port"
+            },
+            {
+                "command": "vscode-serial.sendCommand",
+                "title": "Serial: Send command"
+            },
+            {
+                "command": "vscode-serial.setDeli",
+                "title": "Serial: Set delimiter"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.6.1",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "serialport-js": "^1.1.0"
+    }
+}
