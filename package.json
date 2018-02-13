@@ -1,8 +1,8 @@
 {
     "name": "vscode-serial",
-    "displayName": "vscode-serial",
+    "displayName": "Serial monitor",
     "description": "A VS Code Serial monitor",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "olback",
     "icon": "serial-128.png",
     "galleryBanner": {
