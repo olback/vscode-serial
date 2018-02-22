@@ -1,5 +1,7 @@
 # vscode-serial
 
+![Downloads](https://img.shields.io/vscode-marketplace/d/olback.vscode-serial.svg)
+
 A VS Code Serial monitor
 
 ### Commands:
