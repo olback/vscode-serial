@@ -1,0 +1,66 @@
+{
+    "name": "vscode-serial",
+    "displayName": "Serial Monitor",
+    "description": "A VS Code Serial Monitor for your awesome devices!",
+    "version": "2.0.0",
+    "publisher": "olback",
+    "icon": "serial-128.png",
+    "galleryBanner": {
+        "color": "#333",
+        "theme": "dark"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/olback/vscode-serial",
+    "bugs": "https://github.com/olback/vscode-serial/issues",
+    "categories": [
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/olback/vscode-serial.git"
+    },
+    "author": {
+        "name": "olback",
+        "email": "vscode-serial@olback.net"
+    },
+    "keywords": [
+        "serial",
+        "arduino",
+        "monitor",
+        "serial-monitor",
+        "serialport"
+    ],
+    "engines": {
+        "vscode": "^1.22.0"
+    },
+    "activationEvents": [
+        "onCommand:vscode-serial.openPort"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-serial.openPort",
+                "title": "Serial: Open port"
+            }
+        ]
+    },
+    "scripts": {
+        "install": "electron-rebuild --version 1.7.12",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "electron": "^1.8.6",
+        "electron-rebuild": "^1.7.3",
+        "eslint": "^4.6.1",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.16"
+    },
+    "dependencies": {
+        "serialport": "^6.2.0",
+        "vscode": "^1.1.16"
+    }
+}
