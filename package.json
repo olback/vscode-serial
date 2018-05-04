@@ -34,14 +34,19 @@
         "vscode": "^1.22.0"
     },
     "activationEvents": [
+        "onCommand:vscode-serial.scanPorts",
         "onCommand:vscode-serial.openPort"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
+                "command": "vscode-serial.scanPorts",
+                "title": "Serial: Scan"
+            },
+            {
                 "command": "vscode-serial.openPort",
-                "title": "Serial: Open port"
+                "title": "Serial: Open"
             }
         ]
     },
