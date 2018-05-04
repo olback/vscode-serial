@@ -34,19 +34,58 @@
         "vscode": "^1.22.0"
     },
     "activationEvents": [
+        "onCommand:vscode-serial.activate",
         "onCommand:vscode-serial.scanPorts",
-        "onCommand:vscode-serial.openPort"
+        "onCommand:vscode-serial.selectPort",
+        "onCommand:vscode-serial.setBaudrate",
+        "onCommand:vscode-serial.openPort",
+        "onCommand:vscode-serial.write",
+        "onCommand:vscode-serial.writeBuffer",
+        "onCommand:vscode-serial.generateConfig",
+        "workspaceContains:**/.vscode/serial.json"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
+                "command": "vscode-serial.activate",
+                "title": "Serial: Activate"
+            },
+            {
                 "command": "vscode-serial.scanPorts",
                 "title": "Serial: Scan"
             },
             {
+                "command": "vscode-serial.selectPort",
+                "title": "Serial: Select port"
+            },
+            {
+                "command": "vscode-serial.setBaudrate",
+                "title": "Serial: Set baudrate"
+            },
+            {
                 "command": "vscode-serial.openPort",
-                "title": "Serial: Open"
+                "title": "Serial: Open port"
+            },
+            {
+                "command": "vscode-serial.write",
+                "title": "Serial: Write"
+            },
+            {
+                "command": "vscode-serial.writeBuffer",
+                "title": "Serial: Write (Buffer)"
+            },
+            {
+                "command": "vscode-serial.closePort",
+                "title": "Serial: Close port"
+            },
+            {
+                "command": "vscode-serial.togglePort",
+                "title": "Serial: Toggle connection"
+            },
+            {
+                "command": "vscode-serial.generateConfig",
+                "title": "Serial: Generate config"
             }
         ]
     },
