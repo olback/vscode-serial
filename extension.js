@@ -127,7 +127,7 @@ function openPort() {
     }
 
     if(typeof con.serial === 'object' && con.serial.isOpen) {
-        return vscode.window.showErrorMessage('Cannot open already opend port.');
+        return vscode.window.showErrorMessage('Cannot open already opened port.');
     }
 
     con.serial = new SerialPort(con.port, { baudRate: con.baud, autoOpen: false });
@@ -141,7 +141,7 @@ function openPort() {
 
     vscode.window.showInformationMessage(con.port + ' is now open.');
     output.show();
-    output.appendLine('[Info] Serial connection opend - ' + con.port);
+    output.appendLine('[Info] Serial connection opened - ' + con.port);
 
     con.serial.on('readable', () => {
         output.appendLine(con.serial.read());

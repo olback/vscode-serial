@@ -2,7 +2,7 @@
     "name": "vscode-serial",
     "displayName": "Serial Monitor",
     "description": "A VS Code Serial Monitor for your awesome devices!",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "publisher": "olback",
     "icon": "serial-128.png",
     "galleryBanner": {

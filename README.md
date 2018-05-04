@@ -1,3 +1,7 @@
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/olback.vscode-serial.svg)](https://marketplace.visualstudio.com/items?itemName=olback.vscode-serial)
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/d/olback.vscode-serial.svg)](https://marketplace.visualstudio.com/items?itemName=olback.vscode-serial)
+[![GitHub package version](https://img.shields.io/github/package-json/v/olback/vscode-serial.svg?logo=github&label=Github)](https://github.com/olback/vscode-serial)
+
 # Serial Monitor for VS Code
 
 1. `Serial: Activate` Activate the extension

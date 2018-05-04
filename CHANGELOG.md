@@ -1,3 +1,7 @@
+# 2.0.1
+* Spelling error
+* Readme update
+
 # 2.0.0
 * Complete rewrite!
 * Using serialport instead of serialport-js
