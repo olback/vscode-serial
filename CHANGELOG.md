@@ -1,3 +1,6 @@
+# 2.0.2
+* Attempt to make it work in Windows
+
 # 2.0.1
 * Spelling error
 * Readme update
