@@ -1,3 +1,6 @@
+# 2.0.3
+* Attempt 2 to make it work in Windows
+
 # 2.0.2
 * Attempt to make it work in Windows
 

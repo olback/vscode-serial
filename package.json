@@ -2,7 +2,7 @@
     "name": "vscode-serial",
     "displayName": "Serial Monitor",
     "description": "A VS Code Serial Monitor for your awesome devices!",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "publisher": "olback",
     "icon": "serial-128.png",
     "galleryBanner": {
@@ -99,11 +99,16 @@
         "@types/node": "^7.0.43",
         "eslint": "^4.6.1",
         "typescript": "^2.6.1",
+        "electron": "^1.8.6",
+        "electron-rebuild": "^1.7.3",
+        "node-gyp": "^3.6.2",
+        "serialport": "^6.2.0",
         "vscode": "^1.1.16"
     },
     "dependencies": {
         "electron": "^1.8.6",
         "electron-rebuild": "^1.7.3",
+        "node-gyp": "^3.6.2",
         "serialport": "^6.2.0",
         "vscode": "^1.1.16"
     }
